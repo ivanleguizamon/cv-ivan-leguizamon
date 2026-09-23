@@ -1,105 +1,148 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CV online de Iván Gustavo Leguizamón, perfil administrativo y comercial.">
-    <title>Iván Gustavo Leguizamón | Administrativo y Comercial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="palette.css">
-  </head>
-  <body>
-    <header class="hero" id="inicio">
-      <nav class="nav container" aria-label="Navegación principal">
-        <a class="brand" href="#inicio">IGL<span>.</span></a>
-        <button class="menu-button" aria-expanded="false" aria-controls="menu">Menú</button>
-        <div id="menu" class="menu">
-          <a href="#perfil">Perfil</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a>
-        </div>
-      </nav>
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Administrativo Comercial · Facturación · Pedidos · Gestión Operativa</p>
-          <h1>Iván Gustavo<br><em>Leguizamón</em></h1>
-          <p class="lead">Experiencia en facturación, pedidos, cobranzas, cuentas corrientes, control de stock y gestión administrativa comercial.</p>
-          <div class="actions">
-            <a class="button button-primary" href="Ivan-Gustavo-Leguizamon-CV.pdf" download>Descargar CV en PDF <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="#contacto">Ver disponibilidad</a>
-          </div>
-        </div>
-        <aside class="summary" aria-label="Resumen profesional">
-          <p class="summary-label">Perfil profesional</p>
-          <p>Experiencia consolidada en facturación, pedidos, cobranzas, stock, atención al cliente y gestión operativa.</p>
-          <div class="summary-line"></div>
-          <ul>
-            <li>20 de Junio 351 · El Corte · Alderetes, Tucumán</li>
-            <li>42 años · Nacimiento: 28 de julio de 1984</li>
-            <li>Licencia de conducir</li>
-            <li>DISPONIBILIDAD HORARIA COMPLETA</li>
-          </ul>
-        </aside>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículum Vitae de Iván Gustavo Leguizamón">
+  <title>Iván Gustavo Leguizamón | CV</title>
+  <style>
+    :root { --ink:#13263b; --blue:#156b8a; --muted:#526375; --line:#d8e1e8; --paper:#fff; --canvas:#eef3f6; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--canvas); color:var(--ink); font:16px/1.5 Arial, Helvetica, sans-serif; }
+    .page { width:min(100%, 980px); margin:36px auto; background:var(--paper); box-shadow:0 8px 30px #172c3c20; }
+    header { padding:42px 48px 30px; border-top:9px solid var(--blue); display:flex; justify-content:space-between; gap:24px; align-items:flex-start; }
+    h1 { margin:0; font-size:2.1rem; letter-spacing:.035em; line-height:1.1; }
+    .role { margin:9px 0 0; color:var(--blue); font-size:.95rem; font-weight:700; letter-spacing:.05em; }
+    .personal { margin:0; color:var(--muted); font-size:.9rem; text-align:right; }
+    .personal span { display:block; }
+    main { padding:0 48px 42px; }
+    section { border-top:1px solid var(--line); padding:25px 0 0; margin-top:25px; }
+    h2 { font-size:.84rem; color:var(--blue); letter-spacing:.1em; margin:0 0 12px; }
+    p { margin:0 0 12px; }
+    .experience { margin-top:20px; }
+    .job { margin:0 0 25px; }
+    .job h3 { margin:0; font-size:1rem; letter-spacing:.025em; }
+    .job-meta { margin:2px 0 10px; color:var(--muted); font-size:.92rem; }
+    ul { margin:0; padding-left:20px; }
+    li { margin:2px 0; }
+    .columns { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+    .compact li { margin:3px 0; }
+    .education-item { margin:0 0 12px; }
+    .education-item strong { display:block; }
+    .education-item span { color:var(--muted); font-size:.92rem; }
+    .actions { display:flex; justify-content:center; gap:12px; margin:0 auto 34px; }
+    .action { display:block; width:max-content; border:0; border-radius:4px; background:var(--blue); color:#fff; cursor:pointer; font:700 15px Arial, sans-serif; padding:12px 18px; text-decoration:none; }
+    .action:hover { background:#0f5873; }
+    @media (max-width:650px) { .page { margin:0; box-shadow:none; } header, main { padding-left:24px; padding-right:24px; } header { padding-top:30px; display:block; } .personal { text-align:left; margin-top:18px; } .columns { grid-template-columns:1fr; gap:0; } h1 { font-size:1.75rem; } }
+    @page { size:A4; margin:11mm; }
+    @media print { body { background:#fff; font-size:10pt; line-height:1.33; } .actions { display:none; } .page { width:auto; margin:0; box-shadow:none; } header { padding:0 0 7mm; border-top:5pt solid var(--blue); } main { padding:0; } section { margin-top:5mm; padding-top:5mm; } .job { margin-bottom:4mm; break-inside:avoid; } .columns { gap:9mm; } h1 { font-size:21pt; } h2 { font-size:8pt; margin-bottom:3mm; } .experience { margin-top:3mm; } li { margin:0 0 1px; } }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <div>
+        <h1>IVÁN GUSTAVO LEGUIZAMÓN</h1>
+        <p class="role">ADMINISTRATIVO | ADMINISTRACIÓN COMERCIAL | FACTURACIÓN Y GESTIÓN</p>
       </div>
+      <p class="personal">
+        <span>Calle 20 de Junio 351 - El Corte</span>
+        <span>Alderetes - Tucumán</span>
+        <span>Fecha de nacimiento: 28/07/1984 | 42 años</span>
+        <span>Licencia de conducir: Sí | Disponibilidad: Completa</span>
+      </p>
     </header>
-
     <main>
-      <section class="section container intro" id="perfil">
-        <p class="section-kicker">01 / Perfil</p>
+      <section>
+        <h2>PERFIL PROFESIONAL</h2>
+        <p>Administrativo con amplia experiencia en gestión administrativa y comercial, desarrollada durante más de una década en distintos entornos laborales. Experiencia en facturación, cobranzas, cuentas corrientes, proveedores, compras, control de stock, cierres de caja y manejo de documentación comercial.</p>
+        <p>Dominio de Tango Gestión, ARCA, Excel, herramientas bancarias y sistemas de gestión. Formación en programación y experiencia en soporte técnico informático, con facilidad para adaptarme a nuevos sistemas, herramientas y procesos.</p>
+      </section>
+
+      <section>
+        <h2>EXPERIENCIA LABORAL</h2>
+        <div class="experience">
+          <div class="job">
+            <h3>LÓPEZ FRENOS Y EMBRAGUES</h3>
+            <p class="job-meta">Vendedor Administrativo - Encargado General de Ventas | 7 años - Actualidad</p>
+            <p>Gestión integral de las operaciones administrativas y comerciales del área de ventas.</p>
+            <ul>
+              <li>Facturación diaria mediante Tango Gestión y ARCA; emisión de facturas A, B y C.</li>
+              <li>Emisión de notas de crédito y débito.</li>
+              <li>Gestión de cobranzas y cuentas corrientes.</li>
+              <li>Manejo de proveedores y gestión de compras.</li>
+              <li>Control de stock e inventario; realización de cierres diarios de caja.</li>
+              <li>Manejo de cheques, recibos y remitos.</li>
+              <li>Gestión de operaciones mediante Mercado Pago y operaciones bancarias.</li>
+              <li>Utilización de Excel para organización, control y seguimiento de información.</li>
+              <li>Atención, asesoramiento y seguimiento de clientes.</li>
+              <li>Organización y seguimiento de operaciones comerciales.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>NAVATUC</h3>
+            <p class="job-meta">Administrativo - Técnico Informático | 4 años</p>
+            <ul>
+              <li>Facturación y carga de comprobantes de distintos tipos.</li>
+              <li>Manejo de Tango Gestión.</li>
+              <li>Gestión de cobranzas y cuentas corrientes.</li>
+              <li>Manejo de cheques, recibos y remitos.</li>
+              <li>Gestión de bancos y home banking empresarial.</li>
+              <li>Realización de depósitos bancarios.</li>
+              <li>Manejo de Excel y herramientas informáticas.</li>
+              <li>Soporte y asistencia técnica informática.</li>
+              <li>Resolución de inconvenientes relacionados con sistemas y equipos.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>TELEPERFORMANCE</h3>
+            <p class="job-meta">Soporte Técnico - Arnet | 4 años</p>
+            <ul>
+              <li>Atención y soporte técnico a clientes.</li>
+              <li>Diagnóstico y resolución de inconvenientes relacionados con servicios de Internet.</li>
+              <li>Asistencia telefónica y orientación al usuario.</li>
+              <li>Seguimiento y resolución de requerimientos.</li>
+              <li>Manejo de herramientas y sistemas informáticos.</li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>CORREO ARGENTINO / BAYTON</h3>
+            <p class="job-meta">Operador de Carga de Datos - Operativo Electoral | 1 mes</p>
+            <ul>
+              <li>Carga y procesamiento de datos correspondientes al operativo electoral.</li>
+              <li>Manejo y verificación de información.</li>
+              <li>Trabajo bajo procedimientos y tiempos establecidos.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="columns">
         <div>
-          <h2>Orden, criterio comercial y orientación al servicio.</h2>
-          <p>Perfil versátil para áreas administrativas y comerciales, con práctica sostenida en facturación, cobranzas, caja, seguimiento de clientes, coordinación de ventas y herramientas de gestión. Combino una mirada organizada del trabajo con facilidad para resolver incidencias y adaptarme a sistemas digitales.</p>
+          <h2>FORMACIÓN ACADÉMICA Y TÉCNICA</h2>
+          <p class="education-item"><strong>ROLLING CODE</strong><span>Programación / Desarrollo Web<br>Cursada finalizada - Trabajo final pendiente.</span></p>
+          <p class="education-item"><strong>INGENIERÍA EN COMPUTACIÓN</strong><span>Estudios universitarios realizados.</span></p>
+          <p class="education-item"><strong>INSTITUTO COVIELLO</strong><span>Programación - Estudios realizados.</span></p>
+          <p class="education-item"><strong>CYP SOFT</strong><span>Programación - Estudios realizados.</span></p>
+          <p class="education-item"><strong>EDUCACIÓN SECUNDARIA</strong><span>Secundario completo.</span></p>
         </div>
-      </section>
-
-      <section class="section experience-wrap" id="experiencia">
-        <div class="container">
-          <p class="section-kicker">02 / Experiencia</p>
-          <h2 class="section-title">Trayectoria profesional</h2>
-          <div class="timeline">
-            <article class="job"><div class="job-meta"><span>Administración comercial</span></div><div><h3>Vendedor Administrativo · Encargado General de Ventas</h3><p class="company">López Frenos y Embragues</p><p>Facturación, armado y seguimiento de pedidos, cobranzas, recibos y cuentas corrientes. Control de stock, inventarios y remitos; coordinación con logística y repartidores. Altas en sistema, circuitos de comodatos, reclamos de clientes y documentación de personal propio y terceros. Soporte y asistencia técnica informática en las 3 sucursales.</p></div></article>
-            <article class="job"><div class="job-meta"><span>Administración y tecnología</span></div><div><h3>Administrativo · Técnico Informático</h3><p class="company">Navatuc</p><p>Soporte administrativo y técnico, carga y organización de información, asistencia a usuarios y resolución de incidencias informáticas.</p></div></article>
-            <article class="job"><div class="job-meta"><span>Soporte al cliente</span></div><div><h3>Agente de Soporte Técnico y Supervisor</h3><p class="company">Teleperformance · Campañas Arnet y 112 de Telecom</p><p>Atención y soporte técnico a clientes, diagnóstico y resolución de incidencias, y seguimiento de casos. Como supervisor, coordinación y acompañamiento del equipo de agentes, seguimiento operativo y apoyo para asegurar una atención ágil y de calidad.</p></div></article>
-            <article class="job"><div class="job-meta"><span>Gestión de datos</span></div><div><h3>Carga de datos electoral</h3><p class="company">Correo Argentino · Bayton</p><p>Carga y validación de datos en un entorno de trabajo con plazos definidos y foco en la precisión.</p></div></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section container education" id="formacion">
-        <p class="section-kicker">03 / Formación</p>
-        <div class="education-grid">
-          <div><h2>Aprendizaje continuo, con base técnica.</h2><p>Formación en programación y tecnología complementada con estudios de nivel superior y secundario completo.</p></div>
-          <ul class="education-list">
-            <li><strong>Rolling Code School</strong><span>Desarrollo y programación · Cursada finalizada, trabajo final pendiente</span></li>
-            <li><strong>Ingeniería en Computación</strong><span>Formación académica</span></li>
-            <li><strong>CYP Soft</strong><span>Formación técnica</span></li>
-            <li><strong>Instituto Coviello</strong><span>Formación complementaria</span></li>
-            <li><strong>Secundario completo</strong></li>
-            <li><strong>Desarrollo profesional</strong><span>Interés en continuar la formación en Administración de Empresas</span></li>
+        <div>
+          <h2>CONOCIMIENTOS Y HERRAMIENTAS</h2>
+          <ul class="compact">
+            <li>Tango Gestión y ARCA</li><li>Microsoft Excel y Microsoft Word</li><li>Google Sheets y Google Drive</li><li>Facturación electrónica</li><li>Home banking empresarial y operaciones bancarias</li><li>Mercado Pago</li><li>Sistemas de gestión administrativa</li><li>Soporte técnico informático</li><li>Programación y desarrollo web</li>
           </ul>
-        </div>
-      </section>
-
-      <section class="section skills-section" id="conocimientos">
-        <div class="container">
-          <p class="section-kicker">04 / Conocimientos y competencias</p>
-          <div class="skills-grid">
-            <div><h3>Gestión administrativa</h3><p>Tango Gestión · ARCA · facturación · pedidos · cuentas corrientes · cobranzas y recibos · stock e inventarios · remitos · altas en sistema · comodatos.</p></div>
-            <div><h3>Herramientas digitales</h3><p>Excel · Word · Google Sheets · Google Drive · soporte informático · programación · SAP: capacitación inicial y manejo de circuitos administrativos comerciales.</p></div>
-            <div><h3>Competencias personales</h3><p>Atención al detalle · orientación al cliente · organización · responsabilidad · resolución de problemas · trabajo en equipo.</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contacto">
-        <div class="container contact-grid">
-          <div><p class="section-kicker">05 / Contacto</p><h2>Disponible para sumarme a un equipo que valore la gestión bien hecha.</h2></div>
-          <div class="contact-card"><p><strong>Domicilio</strong>20 de Junio 351 · El Corte · Alderetes · Tucumán</p><p><strong>Fecha de nacimiento</strong>28 de julio de 1984 · 42 años</p><p><strong>Contacto</strong><a style="color:#fff" href="tel:+543815602300">381 560-2300</a><br><a style="color:#fff" href="mailto:ivan.leguizamon70@gmail.com">ivan.leguizamon70@gmail.com</a></p><p><strong>Disponibilidad</strong>DISPONIBILIDAD HORARIA COMPLETA · Licencia de conducir</p></div>
+          <h2 style="margin-top:22px">COMPETENCIAS</h2>
+          <ul class="compact">
+            <li>Organización y planificación</li><li>Responsabilidad y compromiso</li><li>Capacidad de aprendizaje</li><li>Adaptabilidad a nuevos sistemas y procesos</li><li>Resolución de problemas</li><li>Atención al cliente y trabajo en equipo</li><li>Manejo de múltiples tareas</li><li>Orientación a resultados</li>
+          </ul>
         </div>
       </section>
     </main>
-    <footer><div class="container">© <span id="year"></span> Iván Gustavo Leguizamón <a href="#inicio">Volver arriba ↑</a></div></footer>
-    <script src="script.js"></script>
-  </body>
+  </article>
+  <div class="actions">
+    <a class="action" href="Ivan-Gustavo-Leguizamon-CV.pdf" download>Descargar CV en PDF</a>
+    <button class="action" onclick="window.print()">Imprimir CV</button>
+  </div>
+</body>
 </html>
